@@ -32,7 +32,7 @@ s.onupdate=function(data){ //callback to update data in UI
 						+'&jitter='+I("jitText").textContent;
 		xhr.timeout = 3000;
 		xhr.ontimeout = function (e) {
-			console.log('上报超时');
+			console.log('Timeout');
 		};
 		xhr.open('POST', url_report, true);
 		xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
@@ -225,8 +225,8 @@ function I(id){return document.getElementById(id);}
 		IP Address: <span id="ip"></span>
 	</div>
 </div>
-<p><a href="./results.html">查看测速记录</a></p>
-<p><a href="https://github.com/BadApple9/speedtest-x">speedtest-x 项目地址</a></p>
+<p><a href="./results.html">View Result History</a></p>
+<p><a href="https://github.com/BadApple9/speedtest-x">Source Code</a></p>
 <script type="text/javascript">
     initUI();
 </script>
