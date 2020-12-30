@@ -11,12 +11,18 @@
     .footer {line-height: 30px; text-align: center;}
     .footer a{padding:0 6px; font-weight: 300;}
     .footer a:hover{color: green;}
-    .header {line-height: 30px; text-align: center;height:50px;padding-top:50px;}
+    .header {line-height: 30px; text-align: center;height:50px;padding-top:50px;margin-bottom: 10px;}
+    .header span>a {color:white;}
   </style>
 </head>
 <body>
 <div class="header">
   <h1>speedtest-x Result History</h1>
+<span class="layui-badge layui-bg-green"><a href="./chart.html" target="_blank">View linear charts</a></span>
+  <a href="javascript:layer.tips('Linear charts are used to show the speed performance of different ISPs at different times of the day, the program retains 100 results by default and can be increased for more accurate graphical analysis', '#tips', {
+  tips: [3, '#3595CC'],
+  time: 6000
+});"><span id="tips" class="layui-badge layui-bg-black">?</span></a>
 </div>
 
 <table class="layui-hide" id="test"></table>

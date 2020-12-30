@@ -5,6 +5,8 @@
 
 speedtest-x 使用文件数据库来保存来自不同用户的测速结果，方便您查看全国不同地域与运营商的测速效果。
 
+[加入交流 TG 群](https://t.me/xiaozhu5)
+
 **❗ 注意**：基于网页测速的原理，程序会生成无用文件供测速者下载来计算真实下行带宽，一定程度上存在被恶意刷流量的风险，在对外分享你的测速页面后，请注意观察服务器流量使用情况，避免流量使用异常。
 
 ## 扩展细节
@@ -18,7 +20,7 @@ Jetbrains 全家桶教育许可，正规国内大学渠道，9.9 元，购买地
 
 ## 部署与使用
 
-#### 常规部署
+#### 常规部署 (环境要求：PHP 5.6+)
 
 1、下载本仓库并解压到网站目录，访问 `{域名}/index.html` 进行测速
 
@@ -54,15 +56,16 @@ Jetbrains 全家桶教育许可，正规国内大学渠道，9.9 元，购买地
 
 3、访问 `{IP}:{端口}/index.html` 进行测速
 
-## 环境要求
- - PHP 5.6+
-
 ## 截图
 
 ![index](https://raw.githubusercontent.com/BadApple9/images/main/indexdemo.png)
 ![results](https://raw.githubusercontent.com/BadApple9/images/main/resultsdemo.png)
 
 ## 更新记录
+
+**2020/12/22**
+
+> 测速结果增加线性图表([@HuJK](https://github.com/HuJK))
 
 **2020/12/10**
 
